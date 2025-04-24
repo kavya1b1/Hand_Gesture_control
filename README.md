@@ -30,5 +30,6 @@ Control your Mac using simple hand gestures detected via webcam! This project us
 
 Install dependencies:
 
+
 ```bash
 pip install opencv-python mediapipe numpy
