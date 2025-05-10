@@ -35,7 +35,9 @@ pip
 Clone this repo and install dependencies:
 
 git clone [https://github.com/kavya1b1/hand-gesture-mac-control.git](https://github.com/kavya1b1/Hand_Gesture_control/blob/main/hand_gesture_control.py)
+
 cd hand-gesture-mac-control
+
 pip install opencv-python mediapipe numpy
 
 ⚙️ Run the App
