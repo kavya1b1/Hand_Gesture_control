@@ -1,35 +1,70 @@
-# Hand_Gesture_control
+🤟 Hand Gesture Control System (MacOS)
+This project uses your webcam and MediaPipe to detect hand gestures and control system functions on macOS such as volume, music playback (Spotify), screenshots, locking the screen, and opening Finder.
 
-# 🖐️ Hand Gesture Control for macOS
+✨ Features
 
-Control your Mac using simple hand gestures detected via webcam! This project uses **MediaPipe** and **OpenCV** to recognize gestures and trigger useful macOS actions like adjusting volume, locking the screen, controlling Spotify, and more.
+✋ Mute & Unmute with Fist
 
-## 🚀 Features
+🔊 Volume Control with Middle Finger / Thumb Down
 
-- ✊ **Mute/Unmute** — Make a fist to mute, release to unmute
-- ✌️ **Play/Pause Spotify** — Use a peace sign
-- 🤙 **Open Finder** — Show a "Call me" sign
-- 👍 **Take Screenshot** — Thumb + index up, others down
-- 🖕 **Volume Up** — Raise only your middle finger
-- 👎 **Volume Down** — Point thumb downward
-- 🖐️ **Lock Screen** — All fingers up
+⏯ Play/Pause (Spotify) using Peace Sign
 
-## 🧠 Technologies Used
+⏭/⏮ Swipe Right/Left for Next/Previous Spotify Track
 
-- **Python**
-- **MediaPipe** – Hand tracking
-- **OpenCV** – Webcam input and gesture drawing
-- **AppleScript (osascript)** – Trigger macOS actions
-- **Subprocess** – Run shell commands
+📂 Open Finder with "Call Me" Gesture
 
-## 🖥️ Prerequisites
+🖼️ Take Screenshot using Thumb + Index Gesture
 
-- macOS
-- Python 3.7+
-- Webcam
-
-Install dependencies:
+🔒 Lock Screen with 4 Fingers Up, Thumb Down
 
 
-```bash
+🧠 How It Works
+
+Uses MediaPipe for real-time hand tracking and gesture recognition. The gestures are mapped to Mac-specific actions via AppleScript.
+
+🛠️ Requirements
+
+macOS
+
+Python 3.7+
+
+pip
+
+🔧 Installation
+
+Clone this repo and install dependencies:
+
+git clone https://github.com/kavya1b1/hand-gesture-mac-control.git
+cd hand-gesture-mac-control
 pip install opencv-python mediapipe numpy
+
+⚙️ Run the App
+
+python3 gesture_control.py
+
+🙌 Supported Gestures
+
+Gesture	Action
+Fist	Mute / Unmute
+Middle Finger Up	Volume Up
+Thumb Down	Volume Down
+Peace Sign	Spotify Play/Pause
+Call Me Sign	Open Finder
+Thumb + Index	Take Screenshot
+Swipe Right	Next Track
+Swipe Left	Previous Track
+4 Fingers Up	Lock Screen
+
+📁 File Structure
+
+gesture_control.py # Main script
+assets/ # (Optional) Store images or demo gifs
+README.md # This file
+
+📌 Notes
+
+Only works on macOS due to AppleScript dependencies.
+
+Uses system volume and controls Spotify app directly.
+
+Screenshot is saved to Desktop.
