@@ -5,7 +5,7 @@ import subprocess
 import time
 import os
 
-# Volume Control
+# Volume Controll
 def set_volume_mac(volume):
     volume = max(0, min(100, volume))
     subprocess.run(["osascript", "-e", f"set volume output volume {volume}"], check=True)
