@@ -5,7 +5,6 @@ import subprocess
 import time
 import os
 
-
 def set_volume_mac(volume):
     volume = max(0, min(100, volume))
     subprocess.run(["osascript", "-e", f"set volume output volume {volume}"], check=True)
@@ -14,7 +13,7 @@ def get_volume_mac():
     result = subprocess.run(["osascript", "-e", "output volume of (get volume settings)"], capture_output=True, text=True)
     return int(result.stdout.strip())
 
-# Spotify Controls
+# Spotify Controlss
 def play_pause():
     subprocess.run(["osascript", "-e", 'tell application "Spotify" to playpause'])
 
