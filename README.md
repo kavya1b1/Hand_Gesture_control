@@ -3,7 +3,7 @@ This project uses your webcam and MediaPipe to detect hand gestures and control 
 
 ✨ Features
 
-✋ Mute & Unmute with Fist
+✋ Mute & Unmute with Fist.
 
 🔊 Volume Control with Middle Finger / Thumb Down
 
