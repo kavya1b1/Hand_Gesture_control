@@ -1,5 +1,5 @@
 🤟 Hand Gesture Control System (MacOS)
-This project uses your webcam and MediaPipe to detect hand gestures and control system functions on macOS such as volume, music playback (Spotify), screenshots, locking the screen, and opening Finder.
+This project uses your webcam and MediaPipe to detect hand gestures and control system functions on macOS such as volume, music playback (Spotify), screenshots, locking the screen, and opening Finder, and many other apps to open you can add according to you.
 
 ✨ Features
 
